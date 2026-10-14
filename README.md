@@ -1,54 +1,54 @@
-# Vertex Studio — Business Website
+# Vertexora — Digital Agency Website
 
-**Vertex Studio** is a modern business/creative-agency website concept. It uses plain HTML, CSS, and JavaScript, so it can be published directly with GitHub Pages without installing dependencies or building the project.
+A premium, modern, responsive one-page website for a fictional digital agency. Built with plain HTML, CSS, and JavaScript, so it can be hosted on GitHub Pages without a build step.
 
-## Brand
-- **Name:** Vertex Studio
-- **Tagline:** Build What's Next
-- **Style:** Deep navy, electric lime, editorial typography, geometric artwork
-- **Purpose:** Business services / creative agency / digital studio
+## Project name
 
-## Included files
-```text
-vertex-business/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
+**Vertexora** — a made-up agency brand name intended for this demo. Check name/domain availability and any trademark considerations before using it commercially.
 
-## Features
-- Responsive desktop and mobile navigation
-- Hero section and clear calls to action
-- Services overview
-- Selected-work / portfolio showcase
-- About section and studio values
-- Four-step working process
-- Contact call-to-action with email link
-- Scroll reveal effects
-- Accessible focus states and reduced-motion support
-- SEO description and responsive viewport
-- No frameworks, build steps, or package installation
+## Files
+
+- `index.html` — page structure, SEO metadata, sections, and contact form
+- `style.css` — responsive layout, typography, color system, and visual design
+- `script.js` — mobile navigation, dynamic footer year, and email-draft form interaction
+- `README.md` — project and deployment instructions
 
 ## Run locally
-Download/extract the project and open `index.html` in a modern browser. For a local development server, use VS Code with the Live Server extension.
+
+1. Download and unzip the project.
+2. Open `index.html` in a modern browser.
+3. For a local development server, use the VS Code Live Server extension or another static-file server.
+
+No package installation or build command is required.
 
 ## Publish with GitHub Pages
-1. Create a repository on GitHub, e.g. `vertex-business`.
-2. Upload all four files to the repository root.
-3. Open **Settings → Pages**.
-4. Choose **Deploy from a branch**.
-5. Select branch `main` and folder `/(root)`, then click **Save**.
-6. Wait for the Pages deployment to finish. Your published URL appears on the Pages settings screen.
 
-## Before publishing
-- Replace the sample concept projects (Northform, Orbit, Field Notes) with your real projects or clearly mark them as concepts.
-- Replace `hello@vertexstudio.example` with your real business email.
-- Add your real address, social links, business registration details, privacy policy, and terms if needed.
-- Test links and layout on mobile and desktop.
+1. Sign in to [GitHub](https://github.com/).
+2. Create a new repository, for example `vertexora-agency`.
+3. Upload `index.html`, `style.css`, `script.js`, and `README.md` to the repository's **root** folder.
+4. Open **Settings → Pages**.
+5. Under **Build and deployment**, select **Deploy from a branch**.
+6. Select branch **main** and folder **/(root)**, then click **Save**.
+7. Wait for the Pages deployment to finish. GitHub will show the live URL in **Settings → Pages**, usually:
+   `https://YOUR-USERNAME.github.io/vertexora-agency/`
 
-## Important limitations
-This is a static business marketing website. It does not include a backend, CMS, client portal, database, booking system, or server-side contact form. The contact link opens the visitor's email application; messages are not submitted to a server. To add real form handling, CRM, bookings, or analytics, connect an appropriate secure service or backend.
+If you name the repository `YOUR-USERNAME.github.io`, the site can use that root URL instead.
 
-## License
-Customize this starter project for your own business or portfolio.
+## Before going live
+
+- In `index.html`, replace `hello@vertexora.example` with your actual business email.
+- In `script.js`, update the `recipient` constant to that same real email address.
+- Replace the portfolio concept projects with real projects or clearly label them as concepts. The current visuals and project names are illustrative, not claims about actual clients.
+- Update the meta description, social links, and contact details for your business.
+- Google Fonts are loaded from Google Fonts; a network connection is needed for those web fonts. The page still has fallback fonts if they cannot load.
+- Test the live site on mobile and desktop.
+
+## Contact form limitation
+
+GitHub Pages serves static files; it does not run a server-side form handler. This demo validates the fields in the browser and opens the visitor's default email app with a prefilled draft. It does **not** send or store messages by itself. The visitor must send the email. For a true on-page submission form, connect a form backend/service or your own server and review its privacy/security requirements.
+
+## Customization
+
+- Change colors near the top of `style.css` in the `:root` variables.
+- Edit page copy and sections in `index.html`.
+- Update mobile menu or form behavior in `script.js`.

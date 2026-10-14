@@ -3,71 +3,204 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Vertex Studio helps ambitious businesses build sharper brands, smarter digital experiences, and measurable growth.">
-  <meta name="theme-color" content="#101b2d">
-  <title>Vertex Studio — Build What's Next</title>
+  <meta name="description" content="Vertexora is an independent digital agency helping ambitious brands grow through strategy, design, and technology.">
+  <meta name="theme-color" content="#101113">
+  <title>Vertexora — Digital, Designed to Move You Forward</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="header">
-    <a class="logo" href="#home" aria-label="Vertex Studio home"><span class="logo-symbol">V<span>↗</span></span><span>VERTEX<span class="logo-light">STUDIO</span></span></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-    <nav class="nav" id="nav"><a href="#services">Services</a><a href="#work">Our work</a><a href="#about">About</a><a href="#process">Process</a></nav>
-    <a class="header-cta" href="#contact">Let's talk <span>↗</span></a>
+  <div class="announcement">
+    <span class="announcement-dot"></span>
+    Independent digital agency for ambitious brands
+    <a href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+  </div>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Vertexora home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>vertexora<span class="brand-period">.</span></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#work">Selected work</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-cta">Start a project <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="hero-grid"></div><div class="hero-glow"></div>
-      <div class="hero-content">
-        <div class="eyebrow"><span class="status-dot"></span> INDEPENDENT DIGITAL BUSINESS STUDIO</div>
-        <h1>We turn bold<br>ideas into <span class="outline-text">business</span><br><span class="accent-text">momentum.</span></h1>
-        <p class="hero-intro">Strategy, design, and technology for teams ready to move forward. We help good businesses become impossible to ignore.</p>
-        <div class="hero-actions"><a class="btn btn-lime" href="#contact">Start a project <span>↗</span></a><a class="play-link" href="#work"><span class="play-icon">↓</span> Explore our work</a></div>
-        <div class="hero-proof"><div class="proof-avatars"><span>V</span><span>+</span><span>↗</span></div><p><strong>Built for ambitious teams</strong><br>Clear thinking. Real-world outcomes.</p></div>
+    <section class="hero container">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> Strategy · Design · Technology</div>
+        <h1>Make your next<br>move <span class="serif-accent">matter.</span></h1>
+        <p class="hero-description">We turn ambitious ideas into meaningful digital experiences. Thoughtful strategy, standout design, and technology built to move your business forward.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="button button-primary">Build something great <span aria-hidden="true">↗</span></a>
+          <a href="#work" class="text-link">Explore our work <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-proof">
+          <div class="proof-avatars" aria-hidden="true"><span>V</span><span>+</span><span>∞</span></div>
+          <p><strong>Small team. Big-picture thinking.</strong><br>Built around your next chapter.</p>
+        </div>
       </div>
-      <div class="hero-visual" aria-label="Abstract geometric business artwork">
-        <div class="visual-orbit orbit-a"></div><div class="visual-orbit orbit-b"></div><div class="visual-orbit orbit-c"></div>
-        <div class="visual-core"><div class="core-top"></div><div class="core-face"></div><div class="core-side"></div><span>V.</span></div>
-        <div class="floating-tag tag-one"><span class="tag-dot"></span> STRATEGY FIRST</div>
-        <div class="floating-tag tag-two"><span>↗</span> BUILT TO SCALE</div>
-        <div class="visual-index">FIG. 01 / THE NEXT CHAPTER</div>
-        <div class="visual-number">01<span>—</span>04</div>
-      </div>
-      <div class="hero-bottom"><span>SCROLL TO DISCOVER</span><span>STRATEGY · BRAND · DIGITAL</span><span>EST. FOR WHAT'S NEXT</span></div>
-    </section>
-
-    <section class="metrics" aria-label="Studio highlights"><div><strong>01<span>—</span></strong><p>One connected<br>creative partner</p></div><div><strong>360<span>°</span></strong><p>Strategy to launch,<br>under one roof</p></div><div><strong>100<span>%</span></strong><p>Focused on your<br>next big move</p></div><div class="metrics-note"><span class="lime-square"></span><p>Small enough to care.<br>Sharp enough to deliver.</p></div></section>
-
-    <section class="services section" id="services">
-      <div class="section-top"><div><p class="eyebrow dark-eyebrow">WHAT WE DO</p><h2>Built around your<br><span class="serif-accent">next move.</span></h2></div><p class="section-summary">We connect the dots between what your business needs and what your customers remember.</p></div>
-      <div class="service-grid">
-        <article class="service-card"><div class="service-number">01 / STRATEGY</div><div class="service-icon icon-strategy"><span></span><span></span><span></span></div><h3>Business &amp; brand strategy</h3><p>Find your position, clarify your story, and make every move count.</p><a href="#contact" class="arrow-link" aria-label="Discuss strategy service">↗</a></article>
-        <article class="service-card"><div class="service-number">02 / IDENTITY</div><div class="service-icon icon-identity"><span>V</span></div><h3>Brand identity &amp; design</h3><p>Create a distinct visual language that people recognize and trust.</p><a href="#contact" class="arrow-link" aria-label="Discuss brand design service">↗</a></article>
-        <article class="service-card"><div class="service-number">03 / DIGITAL</div><div class="service-icon icon-digital"><span></span><span></span><span></span><span></span></div><h3>Websites &amp; digital products</h3><p>Turn complex journeys into intuitive digital experiences that work.</p><a href="#contact" class="arrow-link" aria-label="Discuss digital service">↗</a></article>
-        <article class="service-card"><div class="service-number">04 / GROWTH</div><div class="service-icon icon-growth"><svg viewBox="0 0 100 70" aria-hidden="true"><path d="M8 60 L34 39 L51 47 L88 10 M64 10 H88 V34"/></svg></div><h3>Marketing &amp; growth</h3><p>Build smarter campaigns, learn from the numbers, and keep improving.</p><a href="#contact" class="arrow-link" aria-label="Discuss growth service">↗</a></article>
+      <div class="hero-art" aria-label="Abstract three-dimensional brand artwork" role="img">
+        <div class="art-grid"></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-sphere"></div>
+        <div class="art-ring"></div>
+        <div class="art-label art-label-top"><span class="live-dot"></span> Ideas in motion</div>
+        <div class="art-label art-label-bottom">V / 001 <span>Digital futures</span></div>
+        <div class="art-cross">✳</div>
       </div>
     </section>
 
-    <section class="work-section" id="work"><div class="section section-work-inner"><div class="section-top"><div><p class="eyebrow">SELECTED THINKING</p><h2>Work that moves<br><span class="serif-accent">things forward.</span></h2></div><a href="#contact" class="outline-button">Have a project? <span>↗</span></a></div>
-      <div class="work-grid">
-        <article class="work-card work-large"><div class="work-art work-art-one"><div class="work-circle"></div><div class="work-word">NORTH<br><i>FORM</i></div><span class="work-stamp">BRAND<br>EVOLUTION</span></div><div class="work-meta"><div><span>BRAND STRATEGY · IDENTITY</span><h3>Northform — A clearer direction</h3></div><span class="work-arrow">↗</span></div></article>
-        <article class="work-card"><div class="work-art work-art-two"><div class="dashboard"><div class="dash-top"><span>orbit / analytics</span><span>•••</span></div><div class="dash-title">Make every<br>move count.</div><div class="dash-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="dash-footer"><span>+24.8%</span><span>GROWTH OVERVIEW</span></div></div></div><div class="work-meta"><div><span>DIGITAL PRODUCT · UX/UI</span><h3>Orbit — Data with direction</h3></div><span class="work-arrow">↗</span></div></article>
-        <article class="work-card"><div class="work-art work-art-three"><div class="packaging"><span>FIELD<br>NOTES</span><div class="packaging-mark">f.</div><small>GOOD THINGS GROW HERE</small></div><div class="packaging-back"></div></div><div class="work-meta"><div><span>CAMPAIGN · ART DIRECTION</span><h3>Field Notes — Made to matter</h3></div><span class="work-arrow">↗</span></div></article>
-      </div><p class="demo-caption">Concept projects shown for demonstration. Replace with your real client work before publishing.</p>
-    </div></section>
+    <section class="client-strip">
+      <div class="container client-strip-inner">
+        <p>Good work starts with<br><strong>good partnerships.</strong></p>
+        <div class="partner-wordmarks" aria-label="Our approach">
+          <span>clarity<span class="wordmark-dot">.</span></span>
+          <span>form / function</span>
+          <span>better by design</span>
+          <span>forward<span class="wordmark-dot">↗</span></span>
+        </div>
+      </div>
+    </section>
 
-    <section class="about section" id="about"><div class="about-visual"><div class="about-big-type">MAKE<br><span>IT</span><br>MATTER<span class="type-dot">.</span></div><div class="about-sticker">GOOD IDEAS<br>NEED GOOD<br>EXECUTION ↗</div><div class="about-bottom-label">VERTEX STUDIO / PRINCIPLE 001</div></div><div class="about-copy"><p class="eyebrow dark-eyebrow">A LITTLE ABOUT US</p><h2>Good work starts<br>with <span class="serif-accent">good questions.</span></h2><p>We’re a business-minded creative studio that believes clarity is a competitive advantage. No unnecessary complexity. No one-size-fits-all playbooks. Just thoughtful collaboration and work built around the real problem.</p><p>From your first idea to your next stage of growth, we bring the right mix of strategic thinking, creative craft, and practical delivery.</p><a class="dark-text-link" href="#contact">Get to know us <span>↗</span></a><div class="values"><div><span>01</span><strong>Stay curious</strong></div><div><span>02</span><strong>Keep it useful</strong></div><div><span>03</span><strong>Make it matter</strong></div></div></div></section>
+    <section class="section container" id="services">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span> What we do</div><h2>Good thinking.<br><span class="serif-accent">Beautifully built.</span></h2></div>
+        <p class="section-intro">The right mix of creative and technical minds, focused on solving the problems that matter to your business.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-top"><span class="service-number">01 / THINK</span><span class="service-icon">↗</span></div>
+          <h3>Strategy &amp; positioning</h3>
+          <p>Get clear on where you're going, who you're for, and how to stand apart.</p>
+          <ul><li>Brand discovery</li><li>Digital strategy</li><li>Audience &amp; market insights</li></ul>
+        </article>
+        <article class="service-card featured-service">
+          <div class="service-top"><span class="service-number">02 / CREATE</span><span class="service-icon">✳</span></div>
+          <h3>Brand &amp; digital design</h3>
+          <p>Build a distinctive identity and digital experience people remember.</p>
+          <ul><li>Visual identity</li><li>UI/UX design</li><li>Creative direction</li></ul>
+        </article>
+        <article class="service-card">
+          <div class="service-top"><span class="service-number">03 / BUILD</span><span class="service-icon">⌘</span></div>
+          <h3>Websites &amp; growth</h3>
+          <p>Launch fast, accessible digital products designed to turn interest into action.</p>
+          <ul><li>Website development</li><li>Landing pages</li><li>Performance optimization</li></ul>
+        </article>
+      </div>
+    </section>
 
-    <section class="process-section" id="process"><div class="section"><div class="section-top"><div><p class="eyebrow">HOW WE WORK</p><h2>Clear steps.<br><span class="serif-accent">Better outcomes.</span></h2></div><p class="section-summary">A collaborative process designed to keep the work focused, the communication open, and the progress visible.</p></div><div class="process-grid"><article><span class="process-no">01</span><div class="process-line"></div><h3>Discover</h3><p>We listen, ask sharper questions, and understand what success actually means to you.</p></article><article><span class="process-no">02</span><div class="process-line"></div><h3>Define</h3><p>We agree on the direction, priorities, scope, and the measures that matter.</p></article><article><span class="process-no">03</span><div class="process-line"></div><h3>Create</h3><p>We turn the plan into thoughtful design, practical systems, and useful experiences.</p></article><article><span class="process-no">04</span><div class="process-line"></div><h3>Launch &amp; learn</h3><p>We deliver, review what works, and identify the next opportunity to improve.</p></article></div></div></section>
+    <section class="work-section" id="work">
+      <div class="container">
+        <div class="section-heading work-heading">
+          <div><div class="eyebrow"><span class="eyebrow-line"></span> Selected concepts</div><h2>Made to make<br><span class="serif-accent">an impression.</span></h2></div>
+          <p class="section-intro">A glimpse of the kind of thoughtful, high-impact digital work we love to create.</p>
+        </div>
+        <div class="work-grid">
+          <article class="work-card work-wide">
+            <div class="work-visual work-visual-one">
+              <div class="mock-browser"><span></span><span></span><span></span><b>MONOGRAPH</b><small>OBJECTS FOR LIVING</small></div>
+              <div class="monograph-title">Less,<br><em>but better.</em></div>
+              <div class="monograph-shape"></div><div class="monograph-caption">A quieter kind of luxury.</div>
+            </div>
+            <div class="work-meta"><div><span class="work-category">Brand direction · E-commerce</span><h3>Monograph Living</h3></div><span class="work-arrow">↗</span></div>
+          </article>
+          <article class="work-card">
+            <div class="work-visual work-visual-two">
+              <div class="pulse-orb"></div><div class="pulse-lines"></div>
+              <span class="nova-label">NOVA / FINANCIAL WELLNESS</span>
+              <div class="nova-title">Money,<br>made <em>clear.</em></div>
+              <div class="nova-bottom">A smarter way to move forward <span>↗</span></div>
+            </div>
+            <div class="work-meta"><div><span class="work-category">Product design · Web</span><h3>Nova Finance</h3></div><span class="work-arrow">↗</span></div>
+          </article>
+          <article class="work-card">
+            <div class="work-visual work-visual-three">
+              <span class="terra-label">TERRA BOTANICS</span>
+              <div class="terra-circle"></div><div class="terra-title">Rooted in<br><em>ritual.</em></div>
+              <span class="terra-foot">CARE THAT COMES FULL CIRCLE</span>
+            </div>
+            <div class="work-meta"><div><span class="work-category">Identity · Digital experience</span><h3>Terra Botanics</h3></div><span class="work-arrow">↗</span></div>
+          </article>
+        </div>
+        <p class="concept-note">Portfolio visuals shown as creative concepts to demonstrate our design direction.</p>
+      </div>
+    </section>
 
-    <section class="contact-section" id="contact"><div class="contact-decoration">LET'S<br>BUILD<span>↗</span></div><div class="contact-content"><p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p><h2>Have a good idea?<br><span class="serif-accent">Let's make it real.</span></h2><p>Tell us what you're working on. Share a challenge, a goal, or even a half-formed idea. We'll take it from there.</p><a class="btn btn-lime" href="mailto:hello@vertexstudio.example?subject=Project%20enquiry">Start a conversation <span>↗</span></a></div><div class="contact-side"><span class="contact-side-line"></span><p>GOOD PEOPLE.<br>GOOD QUESTIONS.<br>GOOD WORK.</p><span>VERTEX STUDIO © <span id="year"></span></span></div></section>
+    <section class="section container about-section" id="about">
+      <div class="about-visual">
+        <div class="about-orbit"></div><div class="about-symbol">v<span>.</span></div>
+        <div class="about-side-note">INDEPENDENT BY NATURE<br>COLLABORATIVE BY DESIGN</div>
+        <div class="about-stamp">CURIOUS<br>ALWAYS ✳</div>
+      </div>
+      <div class="about-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> A little about us</div>
+        <h2>Small on ego.<br><span class="serif-accent">Big on intention.</span></h2>
+        <p class="about-lead">We believe the best digital work happens when sharp thinking meets generous collaboration.</p>
+        <p>Vertexora is an independent digital agency partnering with people who want to build something better. We bring strategy, design, and development together early, so every detail has a reason to be there.</p>
+        <a href="#contact" class="button button-outline">Meet your next partner <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="process-section">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow"><span class="eyebrow-line"></span> How we work</div><h2>Clear process.<br><span class="serif-accent">Better outcomes.</span></h2></div>
+          <p class="section-intro">No mystery, no unnecessary layers. Just a considered process that keeps the work moving.</p>
+        </div>
+        <div class="process-list">
+          <div class="process-item"><span>01</span><h3>Listen &amp; learn</h3><p>We ask better questions, understand your goals, and define what success looks like.</p><span class="process-symbol">↘</span></div>
+          <div class="process-item"><span>02</span><h3>Shape the idea</h3><p>We find the strongest direction and bring it to life through purposeful design.</p><span class="process-symbol">✳</span></div>
+          <div class="process-item"><span>03</span><h3>Make it real</h3><p>We build, test, refine, and prepare your digital experience for the real world.</p><span class="process-symbol">↗</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> Your next chapter</div>
+          <h2>Have a good<br>one in <span class="serif-accent">mind?</span></h2>
+          <p>Tell us what you're dreaming up. We'll bring the questions, the ideas, and a fresh perspective.</p>
+          <a class="contact-email" href="mailto:hello@vertexora.example">hello@vertexora.example <span>↗</span></a>
+          <p class="contact-note">Replace this demo email with your real business email before launch.</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-heading"><span>LET'S START A CONVERSATION</span><span>✳</span></div>
+          <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="How should we call you?" required>
+          <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@company.com" required>
+          <label for="service">What do you need help with?</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Choose a service</option>
+            <option>Brand strategy &amp; identity</option><option>Website design &amp; development</option><option>Digital product / UI/UX</option><option>Growth &amp; optimization</option><option>Something else</option>
+          </select>
+          <label for="message">A little about your project</label><textarea id="message" name="message" rows="3" placeholder="The big idea, the challenge, the dream..." required></textarea>
+          <button class="button button-primary form-submit" type="submit">Prepare email <span aria-hidden="true">↗</span></button>
+          <p class="form-feedback" id="formFeedback" role="status" aria-live="polite">This demo form opens your email app; it does not store submissions.</p>
+        </form>
+      </div>
+    </section>
   </main>
-  <footer class="footer"><a class="logo" href="#home"><span class="logo-symbol">V<span>↗</span></span><span>VERTEX<span class="logo-light">STUDIO</span></span></a><p>Strategy, design &amp; digital for what's next.</p><div class="footer-links"><a href="#services">Services</a><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></div><a class="back-top" href="#home">Back to top ↑</a></footer>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>vertexora<span class="brand-period">.</span></span></a>
+      <p>Thoughtful digital, for what's next.</p>
+      <a class="back-top" href="#top">Back to top ↑</a>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Vertexora Studio. All rights reserved.</span><span>Made with intention <b>✳</b></span><span><a href="#services">Services</a><a href="#work">Work</a><a href="#contact">Contact</a></span></div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
