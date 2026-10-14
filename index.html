@@ -3,118 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Atelier North is an independent interior and brand studio creating thoughtful spaces and identities for modern businesses.">
-  <meta name="theme-color" content="#f5f0e8">
-  <title>Atelier North — Spaces with a Point of View</title>
+  <meta name="description" content="Vertex Studio helps ambitious businesses build sharper brands, smarter digital experiences, and measurable growth.">
+  <meta name="theme-color" content="#101b2d">
+  <title>Vertex Studio — Build What's Next</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="announcement">Independent studio · Available for select projects <span>↗</span></div>
-  <header class="site-header">
-    <a class="wordmark" href="#home" aria-label="Atelier North home"><span class="mark">A<span>N</span></span><span>ATELIER<br><small>NORTH</small></span></a>
-    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-    <nav class="navigation" aria-label="Main navigation">
-      <a href="#studio">Studio</a>
-      <a href="#services">What we do</a>
-      <a href="#work">Selected work</a>
-      <a href="#contact" class="nav-cta">Start a project <span>↗</span></a>
-    </nav>
+  <header class="header">
+    <a class="logo" href="#home" aria-label="Vertex Studio home"><span class="logo-symbol">V<span>↗</span></span><span>VERTEX<span class="logo-light">STUDIO</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav"><a href="#services">Services</a><a href="#work">Our work</a><a href="#about">About</a><a href="#process">Process</a></nav>
+    <a class="header-cta" href="#contact">Let's talk <span>↗</span></a>
   </header>
 
   <main>
     <section class="hero" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-line"></span> A CREATIVE STUDIO FOR AMBITIOUS BRANDS</p>
-        <h1>Spaces that<br>tell <em>your story.</em></h1>
-        <p class="hero-description">We shape considered interiors and distinctive brand experiences for people building something meaningful.</p>
-        <div class="hero-actions">
-          <a class="button button-dark" href="#work">Explore our work <span>↘</span></a>
-          <a class="text-link" href="#studio">Meet the studio <span>↗</span></a>
-        </div>
-        <div class="hero-footnote"><span class="tiny-dot"></span> Thoughtful by design. Memorable by nature.</div>
+      <div class="hero-grid"></div><div class="hero-glow"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="status-dot"></span> INDEPENDENT DIGITAL BUSINESS STUDIO</div>
+        <h1>We turn bold<br>ideas into <span class="outline-text">business</span><br><span class="accent-text">momentum.</span></h1>
+        <p class="hero-intro">Strategy, design, and technology for teams ready to move forward. We help good businesses become impossible to ignore.</p>
+        <div class="hero-actions"><a class="btn btn-lime" href="#contact">Start a project <span>↗</span></a><a class="play-link" href="#work"><span class="play-icon">↓</span> Explore our work</a></div>
+        <div class="hero-proof"><div class="proof-avatars"><span>V</span><span>+</span><span>↗</span></div><p><strong>Built for ambitious teams</strong><br>Clear thinking. Real-world outcomes.</p></div>
       </div>
-      <div class="hero-art" aria-label="Abstract interior design composition">
-        <div class="art-window"></div>
-        <div class="art-sun"></div>
-        <div class="art-arch"></div>
-        <div class="art-pedestal pedestal-one"></div>
-        <div class="art-pedestal pedestal-two"></div>
-        <div class="art-vase"><i></i></div>
-        <div class="art-label">FIG. 01 — FORM & LIGHT</div>
-        <div class="art-stamp">AN<br><span>STUDIO</span></div>
+      <div class="hero-visual" aria-label="Abstract geometric business artwork">
+        <div class="visual-orbit orbit-a"></div><div class="visual-orbit orbit-b"></div><div class="visual-orbit orbit-c"></div>
+        <div class="visual-core"><div class="core-top"></div><div class="core-face"></div><div class="core-side"></div><span>V.</span></div>
+        <div class="floating-tag tag-one"><span class="tag-dot"></span> STRATEGY FIRST</div>
+        <div class="floating-tag tag-two"><span>↗</span> BUILT TO SCALE</div>
+        <div class="visual-index">FIG. 01 / THE NEXT CHAPTER</div>
+        <div class="visual-number">01<span>—</span>04</div>
       </div>
-      <div class="vertical-note">DESIGN WITH INTENTION · EST. 2020</div>
+      <div class="hero-bottom"><span>SCROLL TO DISCOVER</span><span>STRATEGY · BRAND · DIGITAL</span><span>EST. FOR WHAT'S NEXT</span></div>
     </section>
 
-    <section class="intro section-pad" id="studio">
-      <div class="section-kicker">01 / THE STUDIO</div>
-      <div class="intro-content">
-        <h2>Good design feels<br>like <em>it belongs.</em></h2>
-        <div class="intro-right">
-          <p>Atelier North is an independent creative studio working at the intersection of space, story and strategy. We believe the best work isn't just beautiful — it makes people feel something.</p>
-          <a class="underlined-link" href="#contact">A little more about us <span>↗</span></a>
-        </div>
+    <section class="metrics" aria-label="Studio highlights"><div><strong>01<span>—</span></strong><p>One connected<br>creative partner</p></div><div><strong>360<span>°</span></strong><p>Strategy to launch,<br>under one roof</p></div><div><strong>100<span>%</span></strong><p>Focused on your<br>next big move</p></div><div class="metrics-note"><span class="lime-square"></span><p>Small enough to care.<br>Sharp enough to deliver.</p></div></section>
+
+    <section class="services section" id="services">
+      <div class="section-top"><div><p class="eyebrow dark-eyebrow">WHAT WE DO</p><h2>Built around your<br><span class="serif-accent">next move.</span></h2></div><p class="section-summary">We connect the dots between what your business needs and what your customers remember.</p></div>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-number">01 / STRATEGY</div><div class="service-icon icon-strategy"><span></span><span></span><span></span></div><h3>Business &amp; brand strategy</h3><p>Find your position, clarify your story, and make every move count.</p><a href="#contact" class="arrow-link" aria-label="Discuss strategy service">↗</a></article>
+        <article class="service-card"><div class="service-number">02 / IDENTITY</div><div class="service-icon icon-identity"><span>V</span></div><h3>Brand identity &amp; design</h3><p>Create a distinct visual language that people recognize and trust.</p><a href="#contact" class="arrow-link" aria-label="Discuss brand design service">↗</a></article>
+        <article class="service-card"><div class="service-number">03 / DIGITAL</div><div class="service-icon icon-digital"><span></span><span></span><span></span><span></span></div><h3>Websites &amp; digital products</h3><p>Turn complex journeys into intuitive digital experiences that work.</p><a href="#contact" class="arrow-link" aria-label="Discuss digital service">↗</a></article>
+        <article class="service-card"><div class="service-number">04 / GROWTH</div><div class="service-icon icon-growth"><svg viewBox="0 0 100 70" aria-hidden="true"><path d="M8 60 L34 39 L51 47 L88 10 M64 10 H88 V34"/></svg></div><h3>Marketing &amp; growth</h3><p>Build smarter campaigns, learn from the numbers, and keep improving.</p><a href="#contact" class="arrow-link" aria-label="Discuss growth service">↗</a></article>
       </div>
     </section>
 
-    <section class="services section-pad" id="services">
-      <div class="section-heading">
-        <div><div class="section-kicker">02 / OUR EXPERTISE</div><h2>Small details.<br><em>Big feeling.</em></h2></div>
-        <p>From the first sketch to the final finishing touch, we connect every detail to a bigger idea.</p>
-      </div>
-      <div class="service-list">
-        <article class="service-row"><span class="service-number">01</span><div><h3>Interior direction</h3><p>Spaces for hospitality, retail and work that balance function with atmosphere.</p></div><span class="service-symbol">↗</span></article>
-        <article class="service-row"><span class="service-number">02</span><div><h3>Brand identity</h3><p>Visual systems, typography and brand stories built to feel unmistakably yours.</p></div><span class="service-symbol">↗</span></article>
-        <article class="service-row"><span class="service-number">03</span><div><h3>Creative strategy</h3><p>Clear positioning and thoughtful concepts that give good ideas direction.</p></div><span class="service-symbol">↗</span></article>
-      </div>
-    </section>
-
-    <section class="work section-pad" id="work">
-      <div class="work-top"><div><div class="section-kicker">03 / SELECTED CONCEPTS</div><h2>Made with <em>meaning.</em></h2></div><span class="work-note">A few ideas from our world<br>Concept portfolio · 2026</span></div>
+    <section class="work-section" id="work"><div class="section section-work-inner"><div class="section-top"><div><p class="eyebrow">SELECTED THINKING</p><h2>Work that moves<br><span class="serif-accent">things forward.</span></h2></div><a href="#contact" class="outline-button">Have a project? <span>↗</span></a></div>
       <div class="work-grid">
-        <article class="work-card work-large">
-          <div class="project-image project-cafe"><div class="cafe-sun"></div><div class="cafe-counter"></div><div class="cafe-chair"></div><div class="project-tag">HOSPITALITY</div></div>
-          <div class="project-info"><div><h3>Sunday House</h3><p>A slower kind of coffee house</p></div><span>01 ↗</span></div>
-        </article>
-        <article class="work-card work-small">
-          <div class="project-image project-object"><div class="object-disc"></div><div class="object-vessel"></div><div class="project-tag">OBJECTS & IDENTITY</div></div>
-          <div class="project-info"><div><h3>Form / Found</h3><p>Everyday objects, reimagined</p></div><span>02 ↗</span></div>
-        </article>
-      </div>
-      <p class="concept-note">Portfolio visuals are original CSS concept artwork for this demo website, not photographs of completed client projects.</p>
-    </section>
+        <article class="work-card work-large"><div class="work-art work-art-one"><div class="work-circle"></div><div class="work-word">NORTH<br><i>FORM</i></div><span class="work-stamp">BRAND<br>EVOLUTION</span></div><div class="work-meta"><div><span>BRAND STRATEGY · IDENTITY</span><h3>Northform — A clearer direction</h3></div><span class="work-arrow">↗</span></div></article>
+        <article class="work-card"><div class="work-art work-art-two"><div class="dashboard"><div class="dash-top"><span>orbit / analytics</span><span>•••</span></div><div class="dash-title">Make every<br>move count.</div><div class="dash-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="dash-footer"><span>+24.8%</span><span>GROWTH OVERVIEW</span></div></div></div><div class="work-meta"><div><span>DIGITAL PRODUCT · UX/UI</span><h3>Orbit — Data with direction</h3></div><span class="work-arrow">↗</span></div></article>
+        <article class="work-card"><div class="work-art work-art-three"><div class="packaging"><span>FIELD<br>NOTES</span><div class="packaging-mark">f.</div><small>GOOD THINGS GROW HERE</small></div><div class="packaging-back"></div></div><div class="work-meta"><div><span>CAMPAIGN · ART DIRECTION</span><h3>Field Notes — Made to matter</h3></div><span class="work-arrow">↗</span></div></article>
+      </div><p class="demo-caption">Concept projects shown for demonstration. Replace with your real client work before publishing.</p>
+    </div></section>
 
-    <section class="quote-band">
-      <span class="quote-mark">“</span>
-      <blockquote>Design isn't what we add.<br>It's what we <em>make possible.</em></blockquote>
-      <span class="quote-credit">OUR STUDIO PHILOSOPHY</span>
-    </section>
+    <section class="about section" id="about"><div class="about-visual"><div class="about-big-type">MAKE<br><span>IT</span><br>MATTER<span class="type-dot">.</span></div><div class="about-sticker">GOOD IDEAS<br>NEED GOOD<br>EXECUTION ↗</div><div class="about-bottom-label">VERTEX STUDIO / PRINCIPLE 001</div></div><div class="about-copy"><p class="eyebrow dark-eyebrow">A LITTLE ABOUT US</p><h2>Good work starts<br>with <span class="serif-accent">good questions.</span></h2><p>We’re a business-minded creative studio that believes clarity is a competitive advantage. No unnecessary complexity. No one-size-fits-all playbooks. Just thoughtful collaboration and work built around the real problem.</p><p>From your first idea to your next stage of growth, we bring the right mix of strategic thinking, creative craft, and practical delivery.</p><a class="dark-text-link" href="#contact">Get to know us <span>↗</span></a><div class="values"><div><span>01</span><strong>Stay curious</strong></div><div><span>02</span><strong>Keep it useful</strong></div><div><span>03</span><strong>Make it matter</strong></div></div></div></section>
 
-    <section class="process section-pad">
-      <div class="section-kicker">04 / HOW WE WORK</div>
-      <div class="process-layout"><h2>Clear thinking.<br><em>Considered making.</em></h2>
-        <div class="process-steps">
-          <div class="process-step"><span>01</span><div><h3>Listen closely</h3><p>We learn your goals, audience and what makes your business different.</p></div></div>
-          <div class="process-step"><span>02</span><div><h3>Find the idea</h3><p>We develop a clear direction, visual language and practical plan.</p></div></div>
-          <div class="process-step"><span>03</span><div><h3>Make it real</h3><p>We refine the details and deliver a cohesive experience, ready to launch.</p></div></div>
-        </div>
-      </div>
-    </section>
+    <section class="process-section" id="process"><div class="section"><div class="section-top"><div><p class="eyebrow">HOW WE WORK</p><h2>Clear steps.<br><span class="serif-accent">Better outcomes.</span></h2></div><p class="section-summary">A collaborative process designed to keep the work focused, the communication open, and the progress visible.</p></div><div class="process-grid"><article><span class="process-no">01</span><div class="process-line"></div><h3>Discover</h3><p>We listen, ask sharper questions, and understand what success actually means to you.</p></article><article><span class="process-no">02</span><div class="process-line"></div><h3>Define</h3><p>We agree on the direction, priorities, scope, and the measures that matter.</p></article><article><span class="process-no">03</span><div class="process-line"></div><h3>Create</h3><p>We turn the plan into thoughtful design, practical systems, and useful experiences.</p></article><article><span class="process-no">04</span><div class="process-line"></div><h3>Launch &amp; learn</h3><p>We deliver, review what works, and identify the next opportunity to improve.</p></article></div></div></section>
 
-    <section class="contact section-pad" id="contact">
-      <div class="contact-top"><div class="section-kicker">05 / YOUR TURN</div><span class="contact-spark">✳</span></div>
-      <h2>Have a good<br><em>thing in mind?</em></h2>
-      <p>Tell us what you're building. We'd love to hear the story.</p>
-      <a class="button button-light" href="mailto:hello@ateliernorth.example?subject=Project%20enquiry">Start a conversation <span>↗</span></a>
-      <div class="contact-bottom"><span>hello@ateliernorth.example</span><span>Working everywhere, based nowhere in particular.</span></div>
-    </section>
+    <section class="contact-section" id="contact"><div class="contact-decoration">LET'S<br>BUILD<span>↗</span></div><div class="contact-content"><p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p><h2>Have a good idea?<br><span class="serif-accent">Let's make it real.</span></h2><p>Tell us what you're working on. Share a challenge, a goal, or even a half-formed idea. We'll take it from there.</p><a class="btn btn-lime" href="mailto:hello@vertexstudio.example?subject=Project%20enquiry">Start a conversation <span>↗</span></a></div><div class="contact-side"><span class="contact-side-line"></span><p>GOOD PEOPLE.<br>GOOD QUESTIONS.<br>GOOD WORK.</p><span>VERTEX STUDIO © <span id="year"></span></span></div></section>
   </main>
-
-  <footer class="footer"><a class="footer-logo" href="#home">ATELIER NORTH<span>®</span></a><span>© <span id="year"></span> Atelier North Studio</span><a href="#home">Back to top ↑</a></footer>
-  <div class="toast" role="status" aria-live="polite"></div>
-  <script src="script.js"></script>
+  <footer class="footer"><a class="logo" href="#home"><span class="logo-symbol">V<span>↗</span></span><span>VERTEX<span class="logo-light">STUDIO</span></span></a><p>Strategy, design &amp; digital for what's next.</p><div class="footer-links"><a href="#services">Services</a><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></div><a class="back-top" href="#home">Back to top ↑</a></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </body>
 </html>

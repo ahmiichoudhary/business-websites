@@ -1,32 +1,42 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const navigation = document.querySelector(".navigation");
-const toast = document.querySelector(".toast");
+const $ = (selector, root = document) => root.querySelector(selector);
+const nav = $("#nav");
+const menuToggle = $("#menuToggle");
+menuToggle.addEventListener("click", () => {
+  const isOpen = nav.classList.toggle("open");
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.textContent = isOpen ? "×" : "☰";
+});
+nav.addEventListener("click", event => {
+  if (event.target.closest("a")) {
+    nav.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.textContent = "☰";
+  }
+});
+$("#year").textContent = new Date().getFullYear();
 
-if (menuToggle && navigation) {
-  menuToggle.addEventListener("click", () => {
-    const isOpen = navigation.classList.toggle("open");
-    menuToggle.setAttribute("aria-expanded", String(isOpen));
-    menuToggle.textContent = isOpen ? "×" : "☰";
-  });
-
-  navigation.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      navigation.classList.remove("open");
-      menuToggle.setAttribute("aria-expanded", "false");
-      menuToggle.textContent = "☰";
-    });
-  });
-}
-
-document.querySelector("#year").textContent = new Date().getFullYear();
-
-// Show a small helpful notice if the demo email is clicked.
-// The mail app still opens normally through the mailto link.
-document.querySelectorAll('a[href^="mailto:"]').forEach((link) => {
+// Lightweight demo interaction for the portfolio CTA.
+document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
   link.addEventListener("click", () => {
-    if (!toast) return;
-    toast.textContent = "Opening your email app… Replace the demo email in index.html before publishing.";
+    const toast = $("#toast");
+    toast.textContent = "Your email app will open so you can contact Vertex Studio.";
     toast.classList.add("show");
-    window.setTimeout(() => toast.classList.remove("show"), 2800);
+    window.setTimeout(() => toast.classList.remove("show"), 2600);
   });
 });
+
+// Smooth in-page navigation fallback and subtle reveal-on-scroll.
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll(".service-card, .work-card, .process-grid article, .metrics > div").forEach(el => {
+    el.classList.add("reveal");
+    observer.observe(el);
+  });
+}
